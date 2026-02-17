@@ -66,7 +66,7 @@ function verifyToken(req, res, next) {
 
 
 // Protected Route
-app.get("/dashboard", verifyToken, (req, res) => { res.json({
+app.get("/dealing", verifyToken, (req, res) => { res.json({
     message: "Welcome Dashboard",
     user: req.user
   });
